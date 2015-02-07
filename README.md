@@ -147,3 +147,5 @@ There other two fun command: \icon and \round; that enables to wrap the text in 
 	\icon{text}
 	\round{text, color}
 ```
+##Toy Résumé
+
