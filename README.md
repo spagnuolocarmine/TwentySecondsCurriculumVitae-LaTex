@@ -33,6 +33,11 @@ Here's an examples:
 	
 -- _Cracking the Coding Interview, Book, Gayle Laakmann Mcdowell_ --
 
+##Toy Résumé
+***
+![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
+***
+
 # Build 
 This guide walks you to build your résumé.
 
@@ -147,7 +152,3 @@ There other two fun command: \icon and \round; that enables to wrap the text in 
 	\icon{text}
 	\round{text, color}
 ```
-##Toy Résumé
-***
-![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
-***
