@@ -149,5 +149,5 @@ There other two fun command: \icon and \round; that enables to wrap the text in 
 ```
 ##Toy Résumé
 ***
-![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpeg)
+![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
 ***
