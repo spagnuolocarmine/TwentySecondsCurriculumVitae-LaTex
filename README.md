@@ -112,9 +112,9 @@ To create the profile use the command:
 The body document part is composed by sections.
 In the sections you can put two kinds of list items.
 
-The first (_Twenty items environment_)intends a list of detailed informations with four part: **Data** -- **Title** -- **Place** -- **Description**. 
+The first (_Twenty items environment_) intends a list of detailed informations with four part: **Data** -- **Title** -- **Place** -- **Description**. 
 
-The second (_Twenty items short environment_)intends a fewer informations (you can customize this list more easily): **Data** -- **Description**.
+The second (_Twenty items short environment_) intends a fewer informations (you can customize this list more easily): **Data** -- **Description**.
 #### Sections
 * Set up a new section in the body part.
 		
