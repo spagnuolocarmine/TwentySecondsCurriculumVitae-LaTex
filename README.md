@@ -71,10 +71,10 @@ Build your project résumé.
 
 #Environment style and list of commands
 
-The style is divided in two parts. The former is the left side bar: that contains personal information, profile picture, and informations about your professional skills. The second part is the body that should be contains details about your academic studies, professional experiences and all the informations that you want (remember the KISS principle).
+The style is divided in two parts. The former is the left side bar: that contains personal information, profile picture, and information about your professional skills. The second part is the body that should be contains details about your academic studies, professional experiences and all the information that you want (remember the KISS principle).
 
 ###Profile environment
-These are the command to set up the profile informations.
+These are the command to set up the profile information.
 
 * Set up the image profile.
 	
@@ -118,9 +118,9 @@ To create the profile use the command:
 The body document part is composed by sections.
 In the sections you can put two kinds of list items.
 
-The first (_Twenty items environment_) intends a list of detailed informations with four part: **Data** -- **Title** -- **Place** -- **Description**. 
+The first (_Twenty items environment_) intends a list of detailed information with four part: **Data** -- **Title** -- **Place** -- **Description**. 
 
-The second (_Twenty items short environment_) intends a fewer informations (you can customize this list more easily): **Data** -- **Description**.
+The second (_Twenty items short environment_) intends a fewer informationinformation (you can customize this list more easily): **Data** -- **Description**.
 #### Sections
 * Set up a new section in the body part.
 		
