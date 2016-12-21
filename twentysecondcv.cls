@@ -147,7 +147,7 @@
 \newcommand{\makeprofile}
 {
 \begin{tikzpicture}[remember picture,overlay]
-   	 \node [rectangle, fill=asidecolor, anchor=north, minimum width=9.90cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
+     \node [rectangle, fill=asidecolor, anchor=north, minimum width=9.90cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
 \end{tikzpicture}
 
 
@@ -175,17 +175,17 @@
 \end{tabular}
 
 
-\profilesection{About me}{3.2cm}
+\profilesection{Sobre mim}{2.9cm}
 \givenaboutme
 
 
-\profilesection{Skill}{5cm}
+\profilesection{Habilidades}{2.5cm}
 \givenskill
 \giventextskill
 \noindent
 \scriptsize
 \noindent
-(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
+(*)[A escala de habilidades \'e de 0 (Consci\^encia Fundamental) para 6 (Especialista).]
 
 \end{flushleft}
 \end{textblock}
