@@ -36,7 +36,7 @@ Here's an examples:
 
 ##Toy Résumé
 ***
-![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
+![sample résumé](https://github.com/rodfersou/TwentySecondsCurriculumVitae-LaTex/raw/master/Curriculum_Vitae_en.jpg)
 ***
 
 # Build 
@@ -45,7 +45,7 @@ This guide walks you to build your résumé.
 Build requirements:
 
 * LaTex installation.
-	* additionals packages:	 	
+	* additionals packages:		
 		- ClearSans, fontenc
 		- tikz
 		- xcolor
