@@ -34,7 +34,7 @@ Here's an examples:
 	
 -- _Cracking the Coding Interview, Book, Gayle Laakmann Mcdowell_ --
 
-##Toy Résumé
+## Toy Résumé
 ***
 ![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
 ***
