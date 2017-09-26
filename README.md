@@ -8,7 +8,7 @@ _The author assumes no responsibility for the topicality, correctness, completen
 
 This is designed for computer scientists but there is no limitation to use it for résumés in other disciplines.
 
-##The basic idea is KISS - Keep It Simple, Stupid.
+## The basic idea is KISS - Keep It Simple, Stupid.
 
 In a nutshell _**"It is vain to do with more what can be done with fewer"**_ -- Occam's razor --
 
@@ -16,7 +16,7 @@ In a nutshell _**"It is vain to do with more what can be done with fewer"**_ -- 
 
 * _Please do not try to create curriculum more than one-page._ 
 
-###How to describe your experiences?
+### How to describe your experiences?
 
 There are many theories about the résumé screening process of "Big" companies.
 Resume screeners and the interviewers look in your résumé for:
