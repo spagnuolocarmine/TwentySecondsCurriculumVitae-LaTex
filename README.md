@@ -8,6 +8,8 @@ _The author assumes no responsibility for the topicality, correctness, completen
 
 This is designed for computer scientists but there is no limitation to use it for résumés in other disciplines.
 
+### If you like this curriculum, please don't forget to leave a star, to help the development and improvement.
+
 ## The basic idea is KISS - Keep It Simple, Stupid.
 
 In a nutshell _**"It is vain to do with more what can be done with fewer"**_ -- Occam's razor --
