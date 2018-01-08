@@ -71,11 +71,11 @@ Build your project résumé.
 	
 -- _Alternately you can build through your favorite LaTex editor._ --
 
-#Environment style and list of commands
+# Environment style and list of commands
 
 The style is divided in two parts. The former is the left side bar: that contains personal information, profile picture, and information about your professional skills. The second part is the body that should be contains details about your academic studies, professional experiences and all the information that you want (remember the KISS principle).
 
-###Profile environment
+### Profile environment
 These are the command to set up the profile information.
 
 * Set up the image profile.
@@ -116,7 +116,7 @@ To create the profile use the command:
 
 	\makeprofile
 
-###Body environment
+### Body environment
 The body document part is composed by sections.
 In the sections you can put two kinds of list items.
 
@@ -129,7 +129,7 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
 		\section{sction name}
 
 
-####Twenty items environment
+#### Twenty items environment
 ```
 \begin{twenty}
   \twentyitem
@@ -148,7 +148,7 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
     {description}
 \end{twentyshort}
 ```
-###Other commands
+### Other commands
 There other two fun command: \icon and \round; that enables to wrap the text in oval shape.
 
 ```
