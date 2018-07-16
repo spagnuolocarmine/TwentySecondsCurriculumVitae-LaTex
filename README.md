@@ -60,7 +60,7 @@ Build requirements:
 		- marvosym
 		- parskip
 
-###Build through GNU Make command
+### Build through GNU Make command
 Clean your project résumé.
 	
 	make clean
