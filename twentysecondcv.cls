@@ -42,6 +42,7 @@
 \definecolor{red}{HTML}{FB0B00}
 \definecolor{blue}{HTML}{6CE0F1}
 \definecolor{mainblue}{HTML}{0E5484}
+\definecolor{cerulean}{HTML}{007BA7}
 \definecolor{maingray}{HTML}{B9B9B9}
 \definecolor{maindarkgray}{HTML}{B3B3B3}
 \ifdefined\@cv@print
@@ -170,7 +171,7 @@
 \ifthenelse{\equal{\givencvdate}{}}{}{\textsc{\Large\icon{\Info}} & \givencvdate\\}
 \ifthenelse{\equal{\givencvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \givencvaddress\\}
 \ifthenelse{\equal{\givennumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \givennumberphone\\}
-\ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \givencvsite}\\
+\ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{\givencvsite}{\textcolor{cerulean}\givencvsite}}\\
 \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}}
 \end{tabular}
 
