@@ -141,6 +141,19 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
     {description}
 \end{twenty}
 ```
+```
+\begin{twenty}
+  \twentyitemtime
+    {start_color}
+    {end_color}
+    {start_month/year}
+    {end_month/year}
+    {year}
+    {title}
+    {place}
+    {description}
+\end{twenty}
+```
 
 #### Twenty items short environment
 ```
