@@ -1,146 +1,186 @@
-\documentclass[]{twentysecondcv}
- 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Curriculum Vitae Timeline/CV
+% LaTeX Template
+% Version 1.0 (5/23/19)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and finally by
+% Augusto Cunha (contact@augustoicaro.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper or latterpaper
+\usepackage{anyfontsize}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{me.jpeg} % Profile picture
+
+\cvname{Alice} % Your name
+\cvjobtitle{Adventurer} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{United Kingdom} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+39 0325658974} % Phone number
+\cvsite{http://en.wikipedia.org} % Personal website
+\cvmail{alice@wonderland.com} % Email address
+\cvgithub{alicewonderland}
+\cvlinkedin{alicewonderland} % Linkedin user account
+
+%----------------------------------------------------------------------------------------
+
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	 Profile
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
+\profile{Profile}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet, lectus et porttitor pretium, dui enim tempus leo, nec cursus velit velit id massa. Quisque elementum erat mi, vel vehicula nunc fringilla eget. Mauris at sem ante. Integer in dui sed libero scelerisque lobortis varius eget enim. Proin pulvinar metus pretium, facilisis mauris ac, consequat orci. Sed aliquet bibendum metus. Ut imperdiet eu nisi et finibus. Nam eleifend hendrerit felis. Nam hendrerit lectus lacus, vitae vehicula tortor sagittis sit amet. Donec volutpat congue elit ornare facilisis. Sed quis neque diam. Aliquam erat volutpat. Nam fermentum est erat. In neque dolor, dignissim in mi quis, efficitur blandit lectus. Praesent convallis metus in neque vehicula iaculis.} % To have no About Me section, just remove all the text and leave \aboutme{}
 
-\profilepic{alice.jpeg} %path of profile pic
-\cvname{Alice} %your name
-\cvjobtitle{Adventurer}%your actual job position
-\cvdate{26 November 1865}%date of birth
-\cvaddress{United Kingdom}%address
-\cvnumberphone{+39 0325658974}%telphone number
-\cvmail{alice@wonderland.com}%e-mail
-\cvsite{http://en.wikipedia.org}%personal site
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
 
+%\aboutme{About Me}{Extensive background in computer graphics for the petroleum industry using applied mathematics. Areas of interest include Functional Programming Languages, Computational Origami, Application Development Using Open Source Tools, Computer Graphics, Image Processing, Machine Learning, and Geographic Information Systems. Linux enthusiast and admirer of the "open source" philosophy.} % To have no About Me section, just remove all the text and leave \aboutme{}
 
-\aboutme{
-Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.}%About me section
+%----------------------------------------------------------------------------------------
+%	 Interests
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skills{{pursuer of rabbits/5.8},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
+\interest{Other Interest}{The heroine and the dreamer of Wonderland,Alice is the principal character.} 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\skillstext{{lovely/4},{narcissistic/3}}
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
 
-\makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{Polite/5},{Pursuerofrabbits/5.8}}
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-\section{interests}
-The heroine and the dreamer of Wonderland;  Alice is the principal character.
+% Skill text section, each skill must have a value between 0 an 6
+%\skillstext{}
 
-\section{education}
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{twenty}
-  \twentyitem
-    {since 1865}
-    {Ph.D. {\normalfont candidate in Computer Science}}
-    {Wonderland}
-    {\emph{A Quantified Theory of Social Cohesion.}}
-  \twentyitem
-    {1863-1865}
-    {M.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1861-1863}
-    {B.Sc. magna cum laude}
-    {Wonderland}
-    {Majoring in Computer Science}
-  \twentyitem
-    {1856-1861}
-    {High school}
-    {Wonderland}
-    {Specializing in mathematics and physics.}
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitemtime{mainblue}{white}{Sep/2015}{Present}{Job 4}{Employer, Country/City}{\makeList{Try use S.M.A.R.T. method to describe yor role.;Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.;Nullam at maximus purus, sit amet vehicula turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.;Integer fringilla accumsan posuere. Fusce hendrerit magna eget mauris aliquet lobortis. Integer consectetur neque velit, ut posuere neque interdum vel. Morbi scelerisque, nunc quis placerat sagittis, sem massa dignissim lacus, lobortis cursus purus velit ac lorem.}}
+    \twentyitemtime{mainblue}{mainblue}{Feb/2009}{Jun/2015}{Job 3}{Employer, Country/City}{\makeList{Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.;Nullam at maximus purus, sit amet vehicula turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}}
+    \twentyitemtime{mainblue}{mainblue}{Feb/2009}{Jun/2015}{Job 2}{Employer, Country/City}{\makeList{Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.;Nullam at maximus purus, sit amet vehicula turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}}
+	\twentyitemtime{mainblue}{mainblue}{Jun/2003}{Feb/2009}{Job 1}{Employer, Country/City}{\makeList{Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.}}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{publications}
+\section{Education}
 
-\begin{twentyshort}
-  \twentyitemshort
-    {1865}
-    {Chapter One, Down the Rabbit Hole.}
-  \twentyitemshort
-    {1865}
-    {Chapter Two, The Pool of Tears.}
-  \twentyitemshort
-    {1865}
-    {Chapter Three,  The Caucus Race and a Long Tale.}
-  \twentyitemshort
-    {1865}
-    {Chapter Four,  The Rabbit Sends a Little Bill.}
-  \twentyitemshort
-    {1865}
-    {Chapter Five,  Advice from a Caterpillar.}
-\end{twentyshort}
-
-
-
-\section{awards}
-
-\begin{twentyshort}
-  \twentyitemshort
-    {1987}
-    {All-Time Best Fantasy Novel.}
-  \twentyitemshort
-    {1998}
-    {All-Time Best Fantasy Novel before 1990.}
-\end{twentyshort}
-
-
-\section{experience}
-
-\begin{twenty}
-  \twentyitem
-    {1900}
-    {Alice in Wonderland-The Circra (1900's) Silent Film.}
-    {Film}
-    {The first Alice on film was over a hundred years ago.}
-  \twentyitem
-    {1933}
-    {Alice in Wonderland 1933 version.}
-    {Film}
-    {This film stars Ethel griffies and Charlotte Henry. It was a box office flop when it was released.}
-\twentyitem
-    {1951}
-    {Disney Film.}
-    {Film}
-    {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
-
+\begin{twenty} % Environment for a list with descriptions
+	\twentyactualitemtime{mainblue}{white}{Aug/2018}{Present}{Ph.D. Field}{University}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
+	\twentyitemtime{mainblue}{mainblue}{Aug/2016}{Jul/2018}{M.Sc. Fielde}{University}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
+	\twentyitemtime{mainblue}{mainblue}{Aug/2010}{Jul/2010}{B.Sc. Field}{University}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
-\section{other information}
-Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+\begin{twenty}
+\twentyitem{2007-2010}{B.Sc. Field}{Univesity}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
+%\twentyactualitem{2007-2010}{B.Sc. Field}{Univesity}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
+\end{twenty}
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+%\section{Publications}
+
+%\begin{twentyshort} % Environment for a short list with no descriptions
+%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+%	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+%	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+%	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+	%\twentyitemshort{<dates>}{<title/description>}
+%\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\begin{twenty} % Environment for a short list with no descriptions
+{1987}{}
+    \twentyitem{1998}{All-Time Best Fantasy Novel before 1990.}{}{Some description.}
+	\twentyitem{1987}{All-Time Best Fantasy Novel.}{}{Some description.}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+%\section{Qualifications}
+
+%\begin{itemize}
+%    \item Proficiency in Linux systems: CentOS, Debian, Ubuntu, Elementary OS.
+%    \item Experience in Bash, Python, C++, R, Vim, Subversion, Git, OpenGL.
+%    \item Experience using Docker and Singularity.
+%    \item Experience in scrum, Jira, Jenkins.
+%    \item Experience in remote access, network management, system administration.
+%    \item Experience in math, statics, algorithms, solving problems, supervised machine learning problems.
+    
+%\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
 
 \end{document} 
