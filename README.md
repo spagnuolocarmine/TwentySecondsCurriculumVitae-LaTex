@@ -40,7 +40,7 @@ Here's an examples:
 
 ## Toy Résumé
 ***
-![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
+![sample résumé](https://github.com/augustoicaro/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
 ***
 
 # Build 
