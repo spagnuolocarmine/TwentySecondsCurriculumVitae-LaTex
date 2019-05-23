@@ -131,16 +131,7 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
 		\section{sction name}
 
 
-#### Twenty items environment
-```
-\begin{twenty}
-  \twentyitem
-    {year}
-    {title}
-    {place}
-    {description}
-\end{twenty}
-```
+#### Twenty items with timeline environment
 ```
 \begin{twenty}
   \twentyitemtime
@@ -148,6 +139,17 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
     {end_color}
     {start_month/year}
     {end_month/year}
+    {year}
+    {title}
+    {place}
+    {description}
+\end{twenty}
+```
+
+#### Twenty items environment
+```
+\begin{twenty}
+  \twentyitem
     {year}
     {title}
     {place}
