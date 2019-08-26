@@ -166,6 +166,15 @@
 				\draw[fill=maingray,maingray] (0,-\i) rectangle (6,-\i+0.4);
 				\draw[fill=white,mainblue](0,-\i) rectangle (\y,-\i+0.4);
 				\node [above right] at (0,-\i+0.4) {\x};
+				\foreach \z in {0,1,2,...,12}
+                {
+				    \coordinate (A\z) at ($(0,-\i)+(\z*0.5cm,0)$) {};
+				    \ifodd\z
+                        \draw[white] ($(A\z)$) -- ($(A\z)+(0,2.5pt)$);
+                    \else
+                        \draw[white] ($(A\z)$) -- ($(A\z)+(0,5pt)$);
+                    \fi
+                }
 			}
 		\end{tikzpicture}
 	}
