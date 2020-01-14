@@ -165,11 +165,13 @@
 \begin{textblock}{6}(0.5, 0.2)
 \begin{flushleft}
 \hspace{13pt}
-\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
+
+
+\ifthenelse{\equal{\givenprofilepic}{}}{}{\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
     \clip (600/2, 567/2) circle (567/2);
 
         \node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth]{\givenprofilepic}};
-\end{tikzpicture}
+\end{tikzpicture}}
 
 {\Huge\color{mainblue}\givencvname}
 
