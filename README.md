@@ -13,9 +13,7 @@ Twenty Seconds Curriculum Vitae in LaTex
 <br>
 
 [![Donate](https://img.shields.io/badge/PayPal-Donate%20to%20Author-blue.svg)](https://www.paypal.me/CarmineSpagnuolo)   
-
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)(https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/issues)
-
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/issues)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20and%20use%20the%20Twenty%20Seconds%20Curriculum%20Vitae%20in%20LaTex&url=https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex&hashtags=curriculum,resume,templates,cv,latex,interview,résumé) 
 
 
