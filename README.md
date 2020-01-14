@@ -3,6 +3,7 @@ Twenty Seconds Curriculum Vitae in LaTex
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/PayPal-Donate%20to%20Author-blue.svg)](https://www.paypal.me/CarmineSpagnuolo)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/graphs/commit-activity)
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20and%20use%20the%20Twenty%20Seconds%20Curriculum%20Vitae%20in%20LaTex&url=https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex&hashtags=curriculum,resume,templates,cv,latex,interview,résumé)
 
 # Curricula Vitae - Résumés
