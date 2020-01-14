@@ -8,12 +8,12 @@ Twenty Seconds Curriculum Vitae in LaTex
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/graphs/commit-activity) 
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/issues/) 
-[![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/issues?q=is%3Aissue+is%3Aclosed)|
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/issues?q=is%3Aissue+is%3Aclosed)
 
 <br>
 
 [![Donate](https://img.shields.io/badge/PayPal-Donate%20to%20Author-blue.svg)](https://www.paypal.me/CarmineSpagnuolo)   
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/issues) 
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)(https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/issues) 
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Download%20and%20use%20the%20Twenty%20Seconds%20Curriculum%20Vitae%20in%20LaTex&url=https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex&hashtags=curriculum,resume,templates,cv,latex,interview,résumé) 
 
 
