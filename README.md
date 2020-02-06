@@ -16,7 +16,7 @@ Twenty Seconds Curriculum Vitae in LaTex
 
 ### HOT!
 
-- Support Fontawesome Icons new class option ```\documentclass[icon]{twentysecondcv}```, using the name of the icon available in the documentation of the package ![here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
+- Support Fontawesome Icons new class option ```\documentclass[icon]{twentysecondcv}```, using the name of the icon available in the documentation of the package [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
 - The Fontawesome version requires the Fontawesome installed. Notice that the  Fontawesome is already available in Overleaf.com.
 - Section with Icon:
 	\sectionicon{icon-name}{section-name}
@@ -116,7 +116,7 @@ Build your project résumé.
 
 The style is divided in two parts. The former is the left side bar: that contains personal information, profile picture, and information about your professional skills. The second part is the body that should be contains details about your academic studies, professional experiences and all the information that you want (remember the KISS principle).
 
-The class is ```\documentclass[icon]{twentysecondcv}```, the **icon** option enable to use Fontawesome package in sections and twenty items. In order to use the icon option you need to install the Fontawesome package and use the Fontawesome icon name, available in the package documentation ![here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
+The class is ```\documentclass[icon]{twentysecondcv}```, the **icon** option enable to use Fontawesome package in sections and twenty items. In order to use the icon option you need to install the Fontawesome package and use the Fontawesome icon name, available in the package documentation [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
 
 ### Profile environment
 These are the command to set up the profile information.
