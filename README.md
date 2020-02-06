@@ -20,7 +20,7 @@ Twenty Seconds Curriculum Vitae in LaTex
 - The Fontawesome version requires the Fontawesome installed. Notice that the  Fontawesome is already available in Overleaf.com.
 - Section with Icon:
 ```
-	\sectionicon{icon-name}{section-name}
+\sectionicon{icon-name}{section-name}
 ```
 - Twenty icon items environment
 ```
