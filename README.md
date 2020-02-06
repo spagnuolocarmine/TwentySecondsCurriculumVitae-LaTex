@@ -19,7 +19,9 @@ Twenty Seconds Curriculum Vitae in LaTex
 - Support Fontawesome Icons new class option ```\documentclass[icon]{twentysecondcv}```, using the name of the icon available in the documentation of the package [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
 - The Fontawesome version requires the Fontawesome installed. Notice that the  Fontawesome is already available in Overleaf.com.
 - Section with Icon:
+```
 	\sectionicon{icon-name}{section-name}
+```
 - Twenty icon items environment
 ```
 \begin{twentyicon}
