@@ -125,7 +125,7 @@ These are the command to set up the profile information.
 
 * Set up the image profile.
 	
-		\profilepic{paht_name}
+		\profilepic{path_name}
 * Set up your name.
 	
 		\cvname{your name}
