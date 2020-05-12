@@ -94,9 +94,10 @@
 \newcommand{\cvdate}[1]{\renewcommand{\givencvdate}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\givencvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\givennumberphone}{#1}}
+\newcommand{\cvcontactphone}[1]{\renewcommand{\givencontactphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\givencvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\givencvsite}{#1}}
-\newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{  \justifying#1}}
+\newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{\justifying\hspace{.9em}#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}
@@ -105,6 +106,7 @@
 \newcommand{\givencvdate}{}
 \newcommand{\givencvmail}{}
 \newcommand{\givennumberphone}{}
+\newcommand{\givencontactphone}{}
 \newcommand{\givencvaddress}{} 
 \newcommand{\givenaboutme}{}
 \newcommand{\givenprofilepic}{}
@@ -190,6 +192,7 @@
 \ifthenelse{\equal{\givencvdate}{}}{}{\textsc{\Large\icon{\Info}} & \givencvdate\\}
 \ifthenelse{\equal{\givencvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \givencvaddress\\}
 \ifthenelse{\equal{\givennumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \givennumberphone\\}
+\ifthenelse{\equal{\givencontactphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \givencontactphone\\}
 \ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{\givencvsite}{\textcolor{cerulean}\givencvsite}\\}
 \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}}
 \end{tabular}
