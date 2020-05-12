@@ -18,11 +18,20 @@
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
 
+
+\newbool{icon}
+\DeclareOption{icon}{%
+ \booltrue{icon}
+}
 \DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{
   \PassOptionsToClass{\CurrentOption}{article}
 }
 \ProcessOptions\relax
+\ifbool{icon}{\RequirePackage{fontawesome}}{}
+
+
+\usetikzlibrary{calc}
 
 
 %%%%%%%%%%
@@ -42,6 +51,7 @@
 \definecolor{red}{HTML}{FB0B00}
 \definecolor{blue}{HTML}{6CE0F1}
 \definecolor{mainblue}{HTML}{0E5484}
+\definecolor{cerulean}{HTML}{007BA7}
 \definecolor{maingray}{HTML}{B9B9B9}
 \definecolor{maindarkgray}{HTML}{B3B3B3}
 \ifdefined\@cv@print
@@ -116,10 +126,18 @@
 \begin{tikzpicture}
 \foreach [count=\i] \x/\y in {#1}
 {
-
-\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
-\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
-\node [above right ] at (0,\i+0.4) {\x};
+  \draw[fill=maingray,maingray] (0,-\i) rectangle (6,-\i+0.4);
+  \draw[fill=white,mainblue](0,-\i) rectangle (1.2*\y,-\i+0.4);
+  \node [above right ] at (0,-\i+0.4) {\x};
+  \foreach \z in {0,1,2,...,10}
+  {
+    \coordinate (A\z) at ($(0,-\i)+(1.2*\z*0.5cm,0)$) {};
+    \ifodd\z
+        \draw[white] ($(A\z)$) -- ($(A\z)+(0,2.5pt)$);
+    \else
+        \draw[white] ($(A\z)$) -- ($(A\z)+(0,5pt)$);
+    \fi
+  }
 }
 \end{tikzpicture}
 }
@@ -150,15 +168,17 @@
      \node [rectangle, fill=asidecolor, anchor=north, minimum width=9.90cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
 \end{tikzpicture}
 
-
 \begin{textblock}{6}(0.5, 0.2)
 \begin{flushleft}
 \hspace{13pt}
-\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
+
+
+
+\ifthenelse{\equal{\givenprofilepic}{}}{}{\begin{tikzpicture}[x=\imagescale,y=-\imagescale]
     \clip (600/2, 567/2) circle (567/2);
 
         \node[anchor=north west, inner sep=0pt, outer sep=0pt] at (0,0) {\includegraphics[width=\imagewidth]{\givenprofilepic}};
-\end{tikzpicture}
+\end{tikzpicture}}
 
 {\Huge\color{mainblue}\givencvname}
 
@@ -170,7 +190,7 @@
 \ifthenelse{\equal{\givencvdate}{}}{}{\textsc{\Large\icon{\Info}} & \givencvdate\\}
 \ifthenelse{\equal{\givencvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \givencvaddress\\}
 \ifthenelse{\equal{\givennumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \givennumberphone\\}
-\ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \givencvsite}\\
+\ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{\givencvsite}{\textcolor{cerulean}\givencvsite}\\}
 \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}}
 \end{tabular}
 
@@ -185,7 +205,7 @@
 \noindent
 \scriptsize
 \noindent
-(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
+(*)[The skill scale is from 0 (Fundamental Awareness) to 5 (Expert).]
 
 \end{flushleft}
 \end{textblock}
@@ -216,8 +236,21 @@
 \renewcommand{\section}[1]{
   \par%\vspace{\parskip}
   {%
-    \LARGE\color{headercolor}%
+    \LARGE 
+    \color{headercolor}%
     \@sectioncolor #1%
+  }
+  \par\vspace{\parskip}
+}
+
+
+\newcommand{\sectionicon}[2]{
+  \par%\vspace{\parskip}
+  {%
+    \LARGE 
+    #1 
+    \color{headercolor}%
+    \@sectioncolor #2%
   }
   \par\vspace{\parskip}
 }
@@ -239,6 +272,7 @@
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{twenty}{%
+  
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
 }{%
   \end{tabular*}
@@ -252,6 +286,22 @@
     #4\vspace{\parsep}%
   }\\}
 
+\setlength{\tabcolsep}{0pt}
+\newenvironment{twentyicon}{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+}{%
+  \end{tabular*}
+}
+
+\renewcommand{\bfseries}{\color{headercolor}}
+\newcommand{\twentyitemicon}[5]{%
+ \hspace{3pt}\faicon{#1}\hspace{2pt}#2&\parbox[t]{11.2cm}{%
+    \textbf{#3}%
+    \hfill%
+    {\footnotesize#4}\\%
+    #5\vspace{\parsep}%
+  }\\}
+  
 %%%%%%%%%%%%%%%%%%%%%%%%%
 % Small twenty List environment %
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -267,6 +317,18 @@
     \textbf{#2}%
   }\\}
 
+\setlength{\tabcolsep}{0pt}
+\newenvironment{twentyshorticon}{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+}{%
+  \end{tabular*}
+}
+\renewcommand{\bfseries}{\color{headercolor}}
+\newcommand{\twentyitemshorticon}[3]{%
+  \hspace{3pt}\faicon{#1}\hspace{3pt}#2&
+      \parbox[t]{11.5cm}{%
+    \textbf{#3}%
+  }\\}
 
 %%%%%%%%%%%%
 % Page Setting %
