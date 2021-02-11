@@ -131,8 +131,11 @@
   \node [above right ] at (0,-\i+0.4) {\x};
   \foreach \z in {0,1,2,...,10}
   {
-    \coordinate (A\z) at ($(0,-\i)+(1.2*\z*0.5cm,0)$) {};
+    % use 6 cm space, but a on scale of 5 total ticks
+    % each tick is then at 0.6 cm 
+    \coordinate (A\z) at ($(0,-\i)+(\z*0.6cm,0)$) {};
     \ifodd\z
+        % comment below to remove small ticks
         \draw[white] ($(A\z)$) -- ($(A\z)+(0,2.5pt)$);
     \else
         \draw[white] ($(A\z)$) -- ($(A\z)+(0,5pt)$);
@@ -205,7 +208,7 @@
 \noindent
 \scriptsize
 \noindent
-(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
+(*)[The skill scale is from 0 (Fundamental Awareness) to 5 (Expert).]
 
 \end{flushleft}
 \end{textblock}
