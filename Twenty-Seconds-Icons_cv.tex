@@ -1,60 +1,68 @@
-\documentclass[icon]{twentysecondcv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Twenty Seconds Curriculum Vitae in LaTex
+% ****************************************
+% 
+% License: MIT
+%
+% For further information please visit:
+% https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\documentclass[icon]{twentysecondcv}
 \begin{document}
 
-%%%%%%%%%%%%%%%%%
-%%PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%
-%%PERSONAL INFO%%%
-%%%%%%%%%%%%%%%%
-
-\profilepic{alice.jpeg} %path of profile pic
-\cvname{Alice} %your name
-\cvjobtitle{Adventurer}%your actual job position
-\cvdate{26 November 1865}%date of birth
-\cvaddress{United Kingdom}%address
-\cvnumberphone{+39 0325658974}%telphone number
-\cvmail{alice@wonderland.com}%e-mail
-\cvsite{http://en.wikipedia.org}%personal site
-
+%%%%%%%%%%%%%%%%%%%%%%
+%% PROFILE SIDE BAR %%
+%%%%%%%%%%%%%%%%%%%%%%
+% personal info
+\profilepic{alice.jpeg}          % path of profile pic
+\cvname{Alice}                   % your name
+\cvjobtitle{Adventurer}          % your actual job position
+\cvdate{26 November 1865}        % date of birth
+\cvaddress{United Kingdom}       % address
+\cvnumberphone{+39 0325658974}   % telephone number
+\cvmail{alice@wonderland.com}    % e-mail
+\cvsite{http://en.wikipedia.org} % personal site
 
 \aboutme{
 
-Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.}%About me section
+Alice is a sensible prepubescent girl from a wealthy English family who finds herself in a strange world ruled by imagination and fantasy. Alice feels comfortable with her identity and has a strong sense that her environment is comprised of clear, logical, and consistent rules and features. Alice's familiarity with the world has led one critic to describe her as a "disembodied intellect". Alice displays great curiosity and attempts to fit her diverse experiences into a clear understanding of the world.
+} % about me section
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill bar section, each skill must have a value between 0 an 6 (float)%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Skill bar section, each skill must have a value between 0 an 6 (float) %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \skills{{pursuer of rabbits/5},{good manners/4},{outgoing/4.3},{polite/4},{Java/0.01}}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%Skill text section, each skill must have a value between 0 an 6%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Skill text section, each skill must have a value between 0 an 6 %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \skillstext{{lovely/4},{narcissistic/3}}
 
 \makeprofile
-%%%%%%%%%%%%%%%%%%%%
-%%END PROFILE SIDE BAR%%
-%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% END PROFILE SIDE BAR %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%
+%%%%%% BODY %%%%%%
+%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%
-%%%%%%%%BODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%%%%%%
-%%SIMPLE SECTION%%%%%%
+%% SIMPLE SECTION %%
 %%%%%%%%%%%%%%%%%%%%
 \section{interests}
 The heroine and the dreamer of Wonderland;  Alice is the principal character.
 
 \section{education}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%TWENTY LIST ITEMS%%%%%%%%%%%%%%
-%%    Four arguments: date; title; where; description %%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%% TWENTY LIST ITEMS %%%%%%%%%%%%%%%%%%%%%%%
+%% Four arguments: date; title; where; description %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{twentyicon}
   \twentyitemicon
     {graduation-cap}
@@ -69,26 +77,24 @@ The heroine and the dreamer of Wonderland;  Alice is the principal character.
     {Wonderland}
     {Majoring in Computer Science}
   \twentyitemicon
-   {battery-2}
+    {battery-2}
     {1861-1863}
     {B.Sc. magna cum laude}
     {Wonderland}
     {Majoring in Computer Science}
   \twentyitemicon
-   {battery-1}
+    {battery-1}
     {1856-1861}
     {High school}
     {Wonderland}
     {Specializing in mathematics and physics.}
 \end{twentyicon}
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
-%%% Two arguments: date; title/description %%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%% TWENTY LIST SHORTITEMS %%%%%%%%%%%%%%
+%%% Two arguments: date; title/description %%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \sectionicon{\faBook}{publications}
-
 \begin{twentyshort}
   \twentyitemshort
     {1865}
@@ -107,10 +113,7 @@ The heroine and the dreamer of Wonderland;  Alice is the principal character.
     {Chapter Five,  Advice from a Caterpillar.}
 \end{twentyshort}
 
-
-
 \section{awards}
-
 \begin{twentyshorticon}
   \twentyitemshorticon
     {bolt}
@@ -122,9 +125,7 @@ The heroine and the dreamer of Wonderland;  Alice is the principal character.
     {All-Time Best Fantasy Novel before 1990.}
 \end{twentyshorticon}
 
-
 \section{experience}
-
 \begin{twenty}
   \twentyitem
     {1900}
@@ -141,13 +142,13 @@ The heroine and the dreamer of Wonderland;  Alice is the principal character.
     {Disney Film.}
     {Film}
     {Walt Disney brings Lewis Carroll's fantasy story to life in this well done animated classic. Even though many elements from the book were dropped, such as the duchess with the baby pig and mock turtle, this version is without a doubt the most famous Alice adaption made.}
-
 \end{twenty}
+
 \section{other information}
 Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a “poky little house,” and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
 
-%%%%%%%%%%%%%%%%%%%%
-%%%%%ENDBODY%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
+%%%%% ENDBODY %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document} 
