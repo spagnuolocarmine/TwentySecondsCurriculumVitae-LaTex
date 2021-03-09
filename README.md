@@ -14,6 +14,34 @@ Twenty Seconds Curriculum Vitae in LaTex
 
 [![Overleaf](https://img.shields.io/badge/Available-Overleaf-green?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABfVBMVEUAAABIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDxIrDwAAAAcciVhAAAAfXRSTlMAAA8mNj9EQz0yIQhVz+71+/79+fPrZU3k96yDmo36wQEos1pWyR+9tSrjwjkSoF9Fezo3jPZQSm6Til0RmR4Qiysk8YFcDe30kdO8aCPygkwpCtkU3QXwnxu2WXw4R3MM7FRICxZTUQPaBAfnqBXVE2MYZNvEtIQX+MU7S/Pc0IMAAAABYktHRACIBR1IAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH5AEPESoxB1PPhwAAAX1JREFUOMutUldbwkAQ3At2UQJiiQ1FxYaoaGyo2Dt27Nh7FxuK89+9iH4muTz5uS/J3czuzO4t0f8GY0SSLS09IzMrOyeXmIAT2fPyHbITcBW4C4vECsUl+A4FKDVXYKzsBy6vqISnSsivTqHemto6XsLHBAP1GtwgNTZp32qLHvh1s78l8FWm1aKFNqCdgooGOzpIFOiEGiR7V3dPb1+o3yJ/AG5psIBnD4QtZzgEDI+MfsmrYyR2yPXHJ6DmT05plGlxxDOYJe+cLSxFQvOcsWC2UAwsLkU0Z4yWV/iUVk2EKEBrKeecsQ5sGNvYVLCl09vmIsYCfhk7Okc5biBmIOy6sKc77h8AhwbCkQsB3fGYE+wGQkyGQyfh4xJBA+FEBU5/bZ9xk+dGlx7g4vLncHUN3Jhe65bnrFxqO81Y7h1f2XvzqLVtjD7EieKPT/y3j5n3lZ6hixer9379xReICfvCaySeFdnplN/eE+I6pRgUTy5+JBNkjf89PgFCeG27lghtGAAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMC0wMS0xNVQxNzo0Mjo0OSswMzowMHG2UKkAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjAtMDEtMTVUMTc6NDI6NDkrMDM6MDAA6+gVAAAAAElFTkSuQmCC)](https://www.overleaf.com/latex/templates/twenty-seconds-curriculum-vitae/kfgsngtymkfj)
 
+### HOT!
+
+- Support Fontawesome Icons new class option ```\documentclass[icon]{twentysecondcv}```, using the name of the icon available in the documentation of the package [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
+- The Fontawesome version requires the Fontawesome installed. Notice that the  Fontawesome is already available in Overleaf.com.
+- Section with Icon:
+```
+\sectionicon{icon-name}{section-name}
+```
+- Twenty icon items environment
+```
+\begin{twentyicon}
+  \twentyitemicon
+    {icon name}
+    {year}
+    {title}
+    {place}
+    {description}
+\end{twentyicon}
+```
+- Twenty items icon short environment
+```
+\begin{twentyshorticon}
+  \twentyitemshorticon
+    {icon name}
+    {year}
+    {description}
+\end{twentyshorticon}
+```
 
 
 # Curricula Vitae - Résumés
@@ -51,9 +79,9 @@ Here's an examples:
 	
 -- _Cracking the Coding Interview, Book, Gayle Laakmann Mcdowell_ --
 
-## Toy Résumé
+## Toy Résumé with Fontawesome Icons (document class option _icon_)
 ***
-![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv.jpg)
+![sample résumé](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/Twenty-Seconds_cv_icons.jpg)
 ***
 
 # Build 
@@ -90,12 +118,14 @@ Build your project résumé.
 
 The style is divided in two parts. The former is the left side bar: that contains personal information, profile picture, and information about your professional skills. The second part is the body that should be contains details about your academic studies, professional experiences and all the information that you want (remember the KISS principle).
 
+The class is ```\documentclass[icon]{twentysecondcv}```, the **icon** option enable to use Fontawesome package in sections and twenty items. In order to use the icon option you need to install the Fontawesome package and use the Fontawesome icon name, available in the package documentation [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
+
 ### Profile environment
 These are the command to set up the profile information.
 
 * Set up the image profile.
 	
-		\profilepic{paht_name}
+		\profilepic{path_name}
 * Set up your name.
 	
 		\cvname{your name}
@@ -138,13 +168,14 @@ In the sections you can put two kinds of list items.
 The first (_Twenty items environment_) intends a list of detailed information with four part: **Data** -- **Title** -- **Place** -- **Description**. 
 
 The second (_Twenty items short environment_) intends a fewer informationinformation (you can customize this list more easily): **Data** -- **Description**.
-#### Sections
+#### Sections (also wiht icon)
 * Set up a new section in the body part.
 		
 		\section{sction name}
+		\section{icon name}{section name}, require the icon option in the document declaration.
 
 
-#### Twenty items environment
+#### Twenty items environment (also wiht icon)
 ```
 \begin{twenty}
   \twentyitem
@@ -153,15 +184,31 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
     {place}
     {description}
 \end{twenty}
+
+\begin{twentyicon}
+  \twentyitemicon
+    {icon name}
+    {year}
+    {title}
+    {place}
+    {description}
+\end{twentyicon}
 ```
 
-#### Twenty items short environment
+#### Twenty items short environment (also wiht icon)
 ```
 \begin{twentyshort}
   \twentyitemshort
     {year}
     {description}
 \end{twentyshort}
+
+\begin{twentyshorticon}
+  \twentyitemshorticon
+    {icon name}
+    {year}
+    {description}
+\end{twentyshorticon}
 ```
 ### Other commands
 There other two fun command: \icon and \round; that enables to wrap the text in oval shape.

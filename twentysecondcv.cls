@@ -236,15 +236,15 @@
 % Section Color box %
 %%%%%%%%%%%%%%%%%%%%%
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1#2#3{
   {%
+  % Switch between blue and gray
    \round{#1#2#3}{%
-      \ifcase\value{colorCounter}%
-        maingray\or%
-        mainblue\or%
-        maingray\or%
-        mainblue\else%
-        maingray\fi%
+      \ifodd\value{colorCounter}%
+        mainblue%
+      \else%
+        maingray%
+      \fi%
     }%
   }%
   \stepcounter{colorCounter}%
