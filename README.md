@@ -19,11 +19,11 @@ Twenty Seconds Curriculum Vitae in LaTex
 - Support Fontawesome Icons new class option ```\documentclass[icon]{twentysecondcv}```, using the name of the icon available in the documentation of the package [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
 - The Fontawesome version requires the Fontawesome installed. Notice that the  Fontawesome is already available in Overleaf.com.
 - Section with Icon:
-```
+```tex
 \sectionicon{icon-name}{section-name}
 ```
 - Twenty icon items environment
-```
+```tex
 \begin{twentyicon}
   \twentyitemicon
     {icon name}
@@ -34,7 +34,7 @@ Twenty Seconds Curriculum Vitae in LaTex
 \end{twentyicon}
 ```
 - Twenty items icon short environment
-```
+```tex
 \begin{twentyshorticon}
   \twentyitemshorticon
     {icon name}
@@ -176,7 +176,7 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
 
 
 #### Twenty items environment (also wiht icon)
-```
+```tex
 \begin{twenty}
   \twentyitem
     {year}
@@ -196,7 +196,7 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
 ```
 
 #### Twenty items short environment (also wiht icon)
-```
+```tex
 \begin{twentyshort}
   \twentyitemshort
     {year}
@@ -213,7 +213,7 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
 ### Other commands
 There other two fun command: \icon and \round; that enables to wrap the text in oval shape.
 
-```
+```tex
 	\icon{text}
-	\round{text, color}
+	\round{text}{color}
 ```
