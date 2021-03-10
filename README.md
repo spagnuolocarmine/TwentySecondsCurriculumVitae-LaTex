@@ -16,8 +16,8 @@ Twenty Seconds Curriculum Vitae in LaTex
 
 ### HOT!
 
-- Support Fontawesome Icons new class option ```\documentclass[icon]{twentysecondcv}```, using the name of the icon available in the documentation of the package [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
-- The Fontawesome version requires the Fontawesome installed. Notice that the  Fontawesome is already available in Overleaf.com.
+- Support Fontawesome Icons, new class option ```\documentclass[icon]{twentysecondcv}```, using the name of the icon available in the documentation of the package [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
+- The Fontawesome version requires the Fontawesome installed. Notice that the  Fontawesome is already available on Overleaf.com.
 - Section with Icon:
 ```tex
 \sectionicon{icon-name}{section-name}
@@ -45,7 +45,7 @@ Twenty Seconds Curriculum Vitae in LaTex
 
 
 # Curricula Vitae - Résumés
-A curriculum vitae, otherwise known as a CV or résumé, is a document used by individuals to communicate their work history, education and skill set. This is a style template for your curriculum written in LaTex. The main goal of this template is to provide a curriculum that is able to survive to the résumés screening of "twenty seconds".
+A curriculum vitae, otherwise known as a CV or résumé, is a document used by individuals to communicate their work history, education and skill set. This is a style template for your curriculum written in LaTex. The main goal of this template is to provide a curriculum that is able to survive the résumés screening of "twenty seconds".
 
 _The author assumes no responsibility for the topicality, correctness, completeness or quality of the information provided and for the obtained résumés._
 
@@ -57,9 +57,9 @@ This is designed for computer scientists but there is no limitation to use it fo
 
 In a nutshell _**"It is vain to do with more what can be done with fewer"**_ -- Occam's razor --
 
-* **This template has been designed to create a "one-page" résumé is therefore not suitable to create curriculum of more than one-page.** 
+* **This template has been designed to create a "one-page" résumé and is therefore not suitable to create a curriculum of more than one-page.** 
 
-* _Please do not try to create curriculum more than one-page._ 
+* _Please do not try to create a curriculum with more than one-page._ 
 
 ### How to describe your experiences?
 
@@ -69,11 +69,11 @@ Resume screeners and the interviewers look in your résumé for:
 - Are you smart?
 - Can you code (act for what you apply)?
 
-Anyway according to the guidelines of this template you should use a really simple form to describe each items in your résumé: 
+Anyway according to the guidelines of this template you should use a really simple form to describe each item in your résumé: 
 
 	Accomplished <X> by implementing <Y> which led to <Z>
 
-Here's an examples:
+Here's an example:
 	
 	Reduced object rendering time by 75% by applying Floyd's algorithm, leading to a 10% reduction in system boot time.
 	
@@ -85,7 +85,7 @@ Here's an examples:
 ***
 
 # Build 
-This guide walks you to build your résumé.
+This guide will walk you through building your résumé.
 
 Build requirements:
 
@@ -116,12 +116,12 @@ Build your project résumé.
 
 # Environment style and list of commands
 
-The style is divided in two parts. The former is the left side bar: that contains personal information, profile picture, and information about your professional skills. The second part is the body that should be contains details about your academic studies, professional experiences and all the information that you want (remember the KISS principle).
+The style is divided into two parts. The former is the left sidebar: which contains personal information, profile picture, and information about your professional skills. The second part is the body that should contain details about your academic studies, professional experiences and all the information that you want (remember the KISS principle).
 
-The class is ```\documentclass[icon]{twentysecondcv}```, the **icon** option enable to use Fontawesome package in sections and twenty items. In order to use the icon option you need to install the Fontawesome package and use the Fontawesome icon name, available in the package documentation [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
+The class is `\documentclass[icon]{twentysecondcv}`, the **icon** option enable to use Fontawesome package in sections and twenty items. In order to use the icon option, you need to install the Fontawesome package and use the Fontawesome icon name, available in the package documentation [here](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex/raw/master/fontawesome.pdf).
 
 ### Profile environment
-These are the command to set up the profile information.
+These are the commands to set up the profile information.
 
 * Set up the image profile.
 	
@@ -150,24 +150,24 @@ These are the command to set up the profile information.
 * Set up a brief description of you.
 	
 		\about{brief description}
-* Set up the skills with chart style. Each skill must is a couple `{name/value}`, where the value is a floating point value between `0` and `6`. This is an agreement for the graphics issues, the `0` correspond to a Fundamental awareness while `6` to a Expert awareness level.
+* Set up the skills with chart style. Each skill has to be a `{name/value}` pair, where the value is a floating-point value between `0` and `6`. This is an agreement for the graphics issues, the `0` correspond to a Fundamental awareness while `6` to an Expert awareness level.
 	
 		\skills{{name skill1/5.8},{name skill2/4}} 
 * Set up the skills with text style.
 	
 		\skillstext{{name skill1/5.8},{name skill2/4}} 
 
-To create the profile use the command:
+To create the profile, use the command:
 
 	\makeprofile
 
 ### Body environment
-The body document part is composed by sections.
-In the sections you can put two kinds of list items.
+The body document part is composed of sections.
+In the sections, you can use two kinds of list items.
 
-The first (_Twenty items environment_) intends a list of detailed information with four part: **Data** -- **Title** -- **Place** -- **Description**. 
+The first (_Twenty items environment_) is intended for a list of detailed information with four parts: **Data** -- **Title** -- **Place** -- **Description**. 
 
-The second (_Twenty items short environment_) intends a fewer informationinformation (you can customize this list more easily): **Data** -- **Description**.
+The second (_Twenty items short environment_) is intended for less information (you can customize this list more easily): **Data** -- **Description**.
 #### Sections (also wiht icon)
 * Set up a new section in the body part.
 		
@@ -211,7 +211,7 @@ The second (_Twenty items short environment_) intends a fewer informationinforma
 \end{twentyshorticon}
 ```
 ### Other commands
-There other two fun command: \icon and \round; that enables to wrap the text in oval shape.
+There are two other fun commands: \icon and \round; that enables to wrap the text in oval shape.
 
 ```tex
 	\icon{text}
