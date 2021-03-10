@@ -217,3 +217,22 @@ There are two other fun commands: \icon and \round; that enables to wrap the tex
 	\icon{text}
 	\round{text}{color}
 ```
+
+### Colors
+The following colors are defined and used by this class:
+
+|Name|Color|Usage|
+|:---:|:---:|---------|
+|white|![#ffffff](https://via.placeholder.com/60x15/ffffff/000000?text=+)| white text | 
+|gray|![#4D4D4D](https://via.placeholder.com/60x15/4D4D4D/000000?text=+)|   |
+|sidecolor|![#E7E7E7](https://via.placeholder.com/60x15/E7E7E7/000000?text=+)| background of the sidebar |
+|lightgray|![#999999](https://via.placeholder.com/60x15/999999/000000?text=+)|   |
+|green|![#C2E15F](https://via.placeholder.com/60x15/C2E15F/000000?text=+)|   |
+|orange|![#FDA333](https://via.placeholder.com/60x15/FDA333/000000?text=+)|   |
+|purple|![#D3A4F9](https://via.placeholder.com/60x15/D3A4F9/000000?text=+)|   |
+|red|![#FB0B00](https://via.placeholder.com/60x15/FB0B00/000000?text=+)|   |
+|blue|![#6CE0F1](https://via.placeholder.com/60x15/6CE0F1/000000?text=+)|   |
+|mainblue|![#0E5484](https://via.placeholder.com/60x15/0E5484/000000?text=+)| section titles & skills bar graphs & circle around icons, `\icon{text}` |
+|cerulean|![#007BA7](https://via.placeholder.com/60x15/007BA7/000000?text=+)| text color for links  |
+|maingray|![#B9B9B9](https://via.placeholder.com/60x15/B9B9B9/000000?text=+)| section titles |
+|maindarkgray|![#B3B3B3](https://via.placeholder.com/60x15/B3B3B3/000000?text=+)|   |
