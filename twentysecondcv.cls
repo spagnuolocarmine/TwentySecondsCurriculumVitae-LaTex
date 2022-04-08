@@ -32,6 +32,7 @@
 \RequirePackage{pgffor}
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
+\RequirePackage[english]{babel}
 
 %%%%%%%%%%%
 % OPTIONS %
@@ -111,6 +112,7 @@
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}        % picture
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}                % name
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}        % job title
+\newcommand{\cvgithub}[1]{\renewcommand{\givencvgithub}{#1}}            % github
 
 \newcommand{\givencvname}{REQUIRED!} % name
 \newcommand{\givencvdate}{}          % date
@@ -121,6 +123,7 @@
 \newcommand{\givenprofilepic}{}      % picture
 \newcommand{\givencvsite}{}          % site
 \newcommand{\givencvjobtitle}{}      % job title
+\newcommand{\givencvgithub}{}        % github
 
 % icon in blue circle; #1 -> icon
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{
@@ -213,7 +216,8 @@
         % CV mail
         \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}}
       \end{tabular}
-
+        % CV Github
+        \ifthenelse{\equal{\givencvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{\givencvgithub}{\textcolor{cerulean}\givencvgithub}\\}
       % about me text
       \profilesection{About me}{3.2cm}
       \givenaboutme
@@ -292,11 +296,13 @@
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitem}[4]{%
-  \hspace{5pt}#1&\parbox[t]{11.5cm}{%
+  \hspace{12pt}#1&\hspace{5pt}\parbox[t]{11.5cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize#3}\\%
+    \begin{hyphenrules}{nohyphenation}
     #4\vspace{\parsep}%
+    \end{hyphenrules}
   }\\%
 }
 \setlength{\tabcolsep}{0pt}
@@ -307,11 +313,13 @@
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitemicon}[5]{%
- \hspace{3pt}\faicon{#1}\hspace{2pt}#2&\parbox[t]{11.2cm}{%
+ \hspace{3pt}\faicon{#1}\hspace{2pt}#2&\hspace{5pt}\parbox[t]{11.2cm}{%
     \textbf{#3}%
     \hfill%
     {\footnotesize#4}\\%
+    \begin{hyphenrules}{nohyphenation}
     #5\vspace{\parsep}%
+    \end{hyphenrules}
   }\\%
 }
 
@@ -347,5 +355,5 @@
 %%%%%%%%%%%%%%%%
 % Page Setting %
 %%%%%%%%%%%%%%%%
-\RequirePackage[left=7.3cm,top=0.1cm,right=0.5cm,bottom=0.2cm,nohead,nofoot]{geometry}
+\RequirePackage[left=7.3cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
