@@ -216,7 +216,8 @@
         % CV mail
         \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}}
       \end{tabular}
-
+        % CV Github
+        \ifthenelse{\equal{\givencvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{\givencvgithub}{\textcolor{cerulean}\givencvgithub}\\}
       % about me text
       \profilesection{About me}{3.2cm}
       \givenaboutme
