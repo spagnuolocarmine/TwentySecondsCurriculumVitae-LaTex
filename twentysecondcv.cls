@@ -112,6 +112,7 @@
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}        % picture
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}                % name
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}        % job title
+\newcommand{\cvgithub}[1]{\renewcommand{\givencvgithub}{#1}}            % github
 
 \newcommand{\givencvname}{REQUIRED!} % name
 \newcommand{\givencvdate}{}          % date
@@ -122,6 +123,7 @@
 \newcommand{\givenprofilepic}{}      % picture
 \newcommand{\givencvsite}{}          % site
 \newcommand{\givencvjobtitle}{}      % job title
+\newcommand{\givencvgithub}{}        % github
 
 % icon in blue circle; #1 -> icon
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{
