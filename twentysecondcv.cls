@@ -32,6 +32,7 @@
 \RequirePackage{pgffor}
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
+\RequirePackage[english]{babel}
 
 %%%%%%%%%%%
 % OPTIONS %
@@ -292,11 +293,13 @@
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitem}[4]{%
-  \hspace{5pt}#1&\parbox[t]{11.5cm}{%
+  \hspace{12pt}#1&\hspace{5pt}\parbox[t]{11.5cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize#3}\\%
+    \begin{hyphenrules}{nohyphenation}
     #4\vspace{\parsep}%
+    \end{hyphenrules}
   }\\%
 }
 \setlength{\tabcolsep}{0pt}
@@ -307,11 +310,13 @@
 }
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitemicon}[5]{%
- \hspace{3pt}\faicon{#1}\hspace{2pt}#2&\parbox[t]{11.2cm}{%
+ \hspace{3pt}\faicon{#1}\hspace{2pt}#2&\hspace{5pt}\parbox[t]{11.2cm}{%
     \textbf{#3}%
     \hfill%
     {\footnotesize#4}\\%
+    \begin{hyphenrules}{nohyphenation}
     #5\vspace{\parsep}%
+    \end{hyphenrules}
   }\\%
 }
 
