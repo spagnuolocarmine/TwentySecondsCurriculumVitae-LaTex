@@ -111,6 +111,8 @@
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}        % picture
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}                % name
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}        % job title
+\newcommand{\cvgithub}[1]{\renewcommand{\givencvgithub}{#1}}            % GitHub profile
+\newcommand{\cvlinkedin}[1]{\renewcommand{\givencvlinkedin}{#1}}        % LinkedIn porfile
 
 \newcommand{\givencvname}{REQUIRED!} % name
 \newcommand{\givencvdate}{}          % date
@@ -121,6 +123,8 @@
 \newcommand{\givenprofilepic}{}      % picture
 \newcommand{\givencvsite}{}          % site
 \newcommand{\givencvjobtitle}{}      % job title
+\newcommand{\givencvgithub}{}        % GitHub profile
+\newcommand{\givencvlinkedin}{}      % LinkedIn porfile
 
 % icon in blue circle; #1 -> icon
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{
@@ -211,7 +215,12 @@
         % CV site
         \ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \href{\givencvsite}{\textcolor{cerulean}\givencvsite}\\}
         % CV mail
-        \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}}
+        \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}\\}
+		% CV github
+		\ifthenelse{\equal{\givencvgithub}{}}{}{\textsc{\Large\icon{\faGithub}} & \href{https://github.com/\givencvgithub}{\givencvgithub}\\}
+		% CV linkedin
+		\ifthenelse{\equal{\givencvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \href{http://www.linkedin.com/in/\givencvlinkedin}{\givencvlinkedin}}
+	
       \end{tabular}
 
       % about me text
