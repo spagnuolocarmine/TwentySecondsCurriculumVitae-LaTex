@@ -349,3 +349,10 @@
 %%%%%%%%%%%%%%%%
 \RequirePackage[left=7.3cm,top=0.1cm,right=0.5cm,bottom=0.2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!50!black}
+}
