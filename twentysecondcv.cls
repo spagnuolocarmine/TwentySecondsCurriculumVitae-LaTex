@@ -144,7 +144,7 @@
       \draw[fill=maingray,maingray] (0,-\i) rectangle (6,-\i+0.4);
       \draw[fill=white,mainblue](0,-\i) rectangle (1.2*\y,-\i+0.4);
       \node [above right ] at (0,-\i+0.4) {\x};
-      \foreach \z in {0,1,2,...,10}
+      \foreach \z in {1,2,...,9}
       {
         \coordinate (A\z) at ($(0,-\i)+(1.2*\z*0.5cm,0)$) {};
         \ifodd\z
