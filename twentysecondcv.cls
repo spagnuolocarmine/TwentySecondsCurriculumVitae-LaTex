@@ -174,6 +174,35 @@
 
 \newcommand{\giventextskill}{}
 
+% language skills
+\newcommand\languages[1]{ 
+	\renewcommand{\givenlanguage}{
+		\profilesection{Languages}{2.7cm}
+		\noindent
+		\begin{tikzpicture}
+		\foreach [count=\i] \x/\y in {#1}
+		{
+			\draw[fill=maingray,maingray] (1,-.6*\i) rectangle (6,-.6*\i+0.4);
+			\draw[fill=white,mainblue](1,-.6*\i) rectangle (1+\y,-.6*\i+0.4);
+			\node [left] at (.725,-.6*\i+0.2) {\includegraphics[height = 4mm, width=6mm]{flags/\x.png}};
+			\foreach \z in {1,2,...,9}
+			{
+				\coordinate (A\z) at ($(1,-.6*\i)+(\z*0.5cm,0)$) {};
+				\ifodd\z
+				\draw[white] ($(A\z)$) -- ($(A\z)+(0,2.5pt)$);
+				\else
+				\draw[white] ($(A\z)$) -- ($(A\z)+(0,5pt)$);
+				\fi
+			}
+		}
+		\end{tikzpicture}
+	}
+}
+
+\newcommand{\givenlanguage}{}
+
+
+
 \newcommand{\makeprofile}
 {
   % grey bar on the left side
@@ -226,6 +255,8 @@
       \scriptsize
       \noindent
       (*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
+      
+      \givenlanguage
 
     \end{flushleft}
   \end{textblock}
