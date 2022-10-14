@@ -144,7 +144,7 @@
       \draw[fill=maingray,maingray] (0,-\i) rectangle (6,-\i+0.4);
       \draw[fill=white,mainblue](0,-\i) rectangle (1.2*\y,-\i+0.4);
       \node [above right ] at (0,-\i+0.4) {\x};
-      \foreach \z in {0,1,2,...,10}
+      \foreach \z in {1,2,...,9}
       {
         \coordinate (A\z) at ($(0,-\i)+(1.2*\z*0.5cm,0)$) {};
         \ifodd\z
@@ -173,6 +173,35 @@
 }
 
 \newcommand{\giventextskill}{}
+
+% language skills
+\newcommand\languages[1]{ 
+	\renewcommand{\givenlanguage}{
+		\profilesection{Languages}{2.7cm}
+		\noindent
+		\begin{tikzpicture}
+		\foreach [count=\i] \x/\y in {#1}
+		{
+			\draw[fill=maingray,maingray] (1,-.6*\i) rectangle (6,-.6*\i+0.4);
+			\draw[fill=white,mainblue](1,-.6*\i) rectangle (1+\y,-.6*\i+0.4);
+			\node [left] at (.725,-.6*\i+0.2) {\includegraphics[height = 4mm, width=6mm]{flags/\x.png}};
+			\foreach \z in {1,2,...,9}
+			{
+				\coordinate (A\z) at ($(1,-.6*\i)+(\z*0.5cm,0)$) {};
+				\ifodd\z
+				\draw[white] ($(A\z)$) -- ($(A\z)+(0,2.5pt)$);
+				\else
+				\draw[white] ($(A\z)$) -- ($(A\z)+(0,5pt)$);
+				\fi
+			}
+		}
+		\end{tikzpicture}
+	}
+}
+
+\newcommand{\givenlanguage}{}
+
+
 
 \newcommand{\makeprofile}
 {
@@ -226,6 +255,8 @@
       \scriptsize
       \noindent
       (*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
+      
+      \givenlanguage
 
     \end{flushleft}
   \end{textblock}
@@ -349,3 +380,10 @@
 %%%%%%%%%%%%%%%%
 \RequirePackage[left=7.3cm,top=0.1cm,right=0.5cm,bottom=0.2cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+
+\hypersetup{
+	colorlinks,
+	linkcolor={red!50!black},
+	citecolor={blue!50!black},
+	urlcolor={blue!50!black}
+}
