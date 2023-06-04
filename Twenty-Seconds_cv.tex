@@ -1,186 +1,196 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Curriculum Vitae Timeline/CV
+% Twenty One Seconds Resume/CV
 % LaTeX Template
-% Version 1.0 (5/23/19)
+% Version 1.0 (2022/12/29)
 %
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+%
+% profile image is from https://publicdomainvectors.org/photos/nayrhcrel-alice-32.png
+%
+% License
 % Original author:
 % Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
-% Vel (vel@LaTeXTemplates.com) and finally by
-% Augusto Cunha (contact@augustoicaro.com)
+% Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
+%% Copyright 2022-now Alessandro Trinca Tornidor (alessandro at trinca dot tornidor dot com)
 %
-% License:
-% The MIT License (see included LICENSE file)
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This work has the LPPL maintenance status `maintained'.
+% 
+% The Current Maintainer of this work is Alessandro Trinca Tornidor
+%
+% This work consists of the files template.tex and twentyonesecondcv.cls
+% and the derived file twentyonesecondcv.pdf
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper]{twentysecondcv} % a4paper or latterpaper
-\usepackage{anyfontsize}
-%----------------------------------------------------------------------------------------
-%	 PERSONAL INFORMATION
-%----------------------------------------------------------------------------------------
+\documentclass[letterpaper]{twentyonesecondcv} % a4paper for A4
 
-% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+\profilepic{image.png} % Profile picture
+\cvjobtitle{Student \newline Technische Natuurkunde} % Job title/career
+\cvname{First Last} % Your name
+\cvdate{14/09/1998} % Date of birth
+\cvaddress{Street number, city, country} % Short address/location, use \newline if more than 1 line is required
+\cvlinkedin{socials-linkedin}
+\cvmail{my emailadress} % Email address
+\cvnumberphone{phonenumber}
 
-\profilepic{alice.jpeg} % Profile picture
-
-\cvname{Alice} % Your name
-\cvjobtitle{Adventurer} % Job title/career
-
-\cvdate{} % Date of birth
-\cvaddress{United Kingdom} % Short address/location, use \newline if more than 1 line is required
-\cvnumberphone{+39 0325658974} % Phone number
-\cvsite{http://en.wikipedia.org} % Personal website
-\cvmail{alice@wonderland.com} % Email address
-\cvgithub{alicewonderland}
-\cvlinkedin{alicewonderland} % Linkedin user account
-
-%----------------------------------------------------------------------------------------
+\skills{{Nederlands/4.75},{Engels/4.25},{Teamwerk/4},{Programeren/3.25},{MS Office/ 4}, {Oplossingen denkend/4.25},{Analytisch/4.5}}
 
 \begin{document}
-
-%----------------------------------------------------------------------------------------
-%	 Profile
-%----------------------------------------------------------------------------------------
-
-\profile{Profile}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet, lectus et porttitor pretium, dui enim tempus leo, nec cursus velit velit id massa. Quisque elementum erat mi, vel vehicula nunc fringilla eget. Mauris at sem ante. Integer in dui sed libero scelerisque lobortis varius eget enim. Proin pulvinar metus pretium, facilisis mauris ac, consequat orci. Sed aliquet bibendum metus. Ut imperdiet eu nisi et finibus. Nam eleifend hendrerit felis. Nam hendrerit lectus lacus, vitae vehicula tortor sagittis sit amet. Donec volutpat congue elit ornare facilisis. Sed quis neque diam. Aliquam erat volutpat. Nam fermentum est erat. In neque dolor, dignissim in mi quis, efficitur blandit lectus. Praesent convallis metus in neque vehicula iaculis.} % To have no About Me section, just remove all the text and leave \aboutme{}
-
-%----------------------------------------------------------------------------------------
-%	 ABOUT ME
-%----------------------------------------------------------------------------------------
-
-%\aboutme{About Me}{Extensive background in computer graphics for the petroleum industry using applied mathematics. Areas of interest include Functional Programming Languages, Computational Origami, Application Development Using Open Source Tools, Computer Graphics, Image Processing, Machine Learning, and Geographic Information Systems. Linux enthusiast and admirer of the "open source" philosophy.} % To have no About Me section, just remove all the text and leave \aboutme{}
-
-%----------------------------------------------------------------------------------------
-%	 Interests
-%----------------------------------------------------------------------------------------
-
-\interest{Other Interest}{The heroine and the dreamer of Wonderland,Alice is the principal character.} 
-
-%----------------------------------------------------------------------------------------
-%	 SKILLS
-%----------------------------------------------------------------------------------------
-
-% Skill bar section, each skill must have a value between 0 an 6 (float)
-\skills{{Polite/5},{Pursuerofrabbits/4.8}}
-
-%------------------------------------------------
-
-% Skill text section, each skill must have a value between 0 an 6
-%\skillstext{}
-
-%----------------------------------------------------------------------------------------
-
-\makeprofile % Print the sidebar
-
-%----------------------------------------------------------------------------------------
-%	 EXPERIENCE
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
-
-\begin{twenty} % Environment for a list with descriptions
-    \twentyitemtime{mainblue}{white}{Sep/2015}{Present}{Job 4}{Employer, Country/City}{\makeList{Try use S.M.A.R.T. method to describe yor role.;Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.;Nullam at maximus purus, sit amet vehicula turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.;Integer fringilla accumsan posuere. Fusce hendrerit magna eget mauris aliquet lobortis. Integer consectetur neque velit, ut posuere neque interdum vel. Morbi scelerisque, nunc quis placerat sagittis, sem massa dignissim lacus, lobortis cursus purus velit ac lorem.}}
-    \twentyitemtime{mainblue}{mainblue}{Feb/2009}{Jun/2015}{Job 3}{Employer, Country/City}{\makeList{Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.;Nullam at maximus purus, sit amet vehicula turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}}
-    \twentyitemtime{mainblue}{mainblue}{Feb/2009}{Jun/2015}{Job 2}{Employer, Country/City}{\makeList{Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.;Nullam at maximus purus, sit amet vehicula turpis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}}
-	\twentyitemtime{mainblue}{mainblue}{Jun/2003}{Feb/2009}{Job 1}{Employer, Country/City}{\makeList{Sed lobortis dolor vel orci facilisis, at consequat libero tincidunt. Praesent eu mi non mi ullamcorper fringilla vitae at nunc.}}
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 EDUCATION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-
-\begin{twenty} % Environment for a list with descriptions
-	\twentyactualitemtime{mainblue}{white}{Aug/2018}{Present}{Ph.D. Field}{University}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
-	\twentyitemtime{mainblue}{mainblue}{Aug/2016}{Jul/2018}{M.Sc. Fielde}{University}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
-	\twentyitemtime{mainblue}{mainblue}{Aug/2010}{Jul/2010}{B.Sc. Field}{University}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
-	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
-\end{twenty}
-\begin{twenty}
-\twentyitem{2007-2010}{B.Sc. Field}{Univesity}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
-%\twentyactualitem{2007-2010}{B.Sc. Field}{Univesity}{Integer rutrum vitae urna tincidunt lacinia. Duis aliquet massa vestibulum, sollicitudin est vel, convallis ligula. Donec fermentum nibh purus, pulvinar tincidunt neque tempus in.}
-\end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-%\section{Publications}
-
-%\begin{twentyshort} % Environment for a short list with no descriptions
-%	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
-%	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
-%	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
-%	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
-%	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
-	%\twentyitemshort{<dates>}{<title/description>}
-%\end{twentyshort}
-
-%----------------------------------------------------------------------------------------
-%	 AWARDS
-%----------------------------------------------------------------------------------------
-
-\section{Awards}
-
-\begin{twenty} % Environment for a short list with no descriptions
-{1987}{}
-    \twentyitem{1998}{All-Time Best Fantasy Novel before 1990.}{}{Some description.}
-	\twentyitem{1987}{All-Time Best Fantasy Novel.}{}{Some description.}
-	%\twentyitemshort{<dates>}{<title/description>}
-\end{twenty}
-
-%----------------------------------------------------------------------------------------
-%	 OTHER INFORMATION
-%----------------------------------------------------------------------------------------
-
-%\section{Other information}
-
-%\subsection{Review}
-
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%----------------------------------------------------------------------------------------
-%	 INTERESTS
-%----------------------------------------------------------------------------------------
-
-%\section{Qualifications}
-
-%\begin{itemize}
-%    \item Proficiency in Linux systems: CentOS, Debian, Ubuntu, Elementary OS.
-%    \item Experience in Bash, Python, C++, R, Vim, Subversion, Git, OpenGL.
-%    \item Experience using Docker and Singularity.
-%    \item Experience in scrum, Jira, Jenkins.
-%    \item Experience in remote access, network management, system administration.
-%    \item Experience in math, statics, algorithms, solving problems, supervised machine learning problems.
+\sidesection{
+    \makeheaderprofile
+    \makeinfoprofile
+    %\aboutme{Ik ben een enthousiaste jongen met een groot interesse voor technologie. Ik verdiep me graag in computers en andere gadgets. Verder ben ik zeer sportief doe ik aan meerdere sporten. Ook speel ik graag (computer-) spelletjes samen of alleen.}
+    \makeskillsprofile
+    \par\vfill
+    \makefooterprofile{}
     
-%\end{itemize}
+}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% For some reason you can't have a new line here...
+\mainsection{
 
-%----------------------------------------------------------------------------------------
-%	 SECOND PAGE EXAMPLE
-%----------------------------------------------------------------------------------------
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%Skill bar section, each skill must have a value between 0 and 6 (float)%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+    \section{Over mij}
+    
+    Ik ben een enthousiaste jongen met een groot interesse voor technologie. Ik verdiep me graag in computers en andere gadgets. Verder ben ik zeer sportief doe ik aan meerdere sporten. Ook speel ik graag (computer-) spelletjes samen of alleen.
+    
+    \section{Opleidingen}
+    
+    \begin{twenty}
+      \twentyitem
+        {2019 - 2022}
+        {B.Sc. {\normalfont Technische Natuurkunde}}
+        {school, city}
+        {}
+      \twentyitem
+        {2017 - 2018}
+        {B.Sc. Technische Natuurkunde}
+        {school, city}
+        {}
+      \twentyitem
+        {2016 - 2017}
+        {B.Sc. Technische Natuurkunde}
+        {school, city}
+        {}
+      \twentyitem
+        {2010 - 2016}
+        {Tweetalig VWO}
+        {school, city}
+        {NT profiel met Economie \& NL\&T}
+    \end{twenty}
+    
+        \section{Werkervaring}
+    
+    \begin{twenty} % Environment for a list with descriptions  
+        \twentyitem
+        {Sep 2020 - Apr 2022}
+        {Student aan Huis medewerker}
+        {SaH, city}
+        {}
+        \twentyitem
+        {Jan 2019 - Sep 2019}
+        {T-Mobile Thuis klantenservice medewerker}
+        {Young Capital, city}
+        {}
+        \twentyitem
+        {Okt 2018 - Nov 2019}
+        {Mise en Place medewerker}
+        {Mise en Place, city}
+        {}
+        \twentyitem
+        {Okt 2018 - Jun 2020}
+        {Ambassadeur Technische Natuurkunde}
+        {Studentenpool Bètatechniek, city}
+        {}
+    \end{twenty}
+    
 
-%\newpage % Start a new page
+\section{Overige ervaringen}
+    
+    \begin{twenty}
+      \twentyitem
+        {Sep 2017 - Jun 2022}
+        {Submarine commissie}
+        {location}
+        {Algemeen lid \& Schipper}
+      \twentyitem
+        {Okt 2017 - Jun 2018}
+        {Eerstejaarscommissie}
+        {location}
+        {Heroprichter \& penningmeester}
+    \twentyitem
+        {Sep 2017 - Jun 2018}
+        {Eerstejaarscommissie}
+        {location}
+        {Begeleiding nieuwe lichting}
+    \twentyitem
+        {Okt 2016 - Jun 2017}
+        {Eerstejaarscommissie}
+        {location}
+        {Algemeen lid}
+    \twentyitem
+        {Jun 2016 - okt 2016}
+        {Caissière}
+        {location}
+        {}
+    \twentyitem
+        {Zomervakantie 2015}
+        {Verscheidene werkzaamheden}
+        {location}
+        {}
+    \twentyitem
+        {Zomervakantie 2014}
+        {Productiewerk}
+        {location}
+        {}
+    \twentyitem
+        {Mei (2 weken)}
+        {Vrijwilligerswerk}
+        {location}
+        {}
+    \twentyitem
+        {Kerstvakantie 2013}
+        {Productiewerk}
+        {location}
+        {}
+    \end{twenty}
 
-%\makeprofile % Print the sidebar
+%\section{Fill}
+    
+%    \begin{twentyshort}
+%      \twentyitemshort
+%        {Datum}
+%        {Iets}
+%      \twentyitemshort
+%        {Datum}
+%        {Iets}
+%    \end{twentyshort}
+    
+    \section{Hobbies}
+    \begin{itemize}
+    \item Hockey
+    \item Tennis
+    \item Skiën
+    \item Zeilen
+    \item Technologie
+    \item (Computer-)spellen
+    \end{itemize}
 
-%\section{Other information}
-
-%\subsection{Review}
-
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%\section{Other information}
-
-%\subsection{Review}
-
-%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
-
-%----------------------------------------------------------------------------------------
-
-\end{document} 
+%% end main section
+}
+\end{document}
